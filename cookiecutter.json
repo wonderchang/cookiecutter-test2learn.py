@@ -1,0 +1,8 @@
+{
+  "python_versions": "3.5.6,3.6.8",
+  "pytest_version": "4.2.0",
+  "python_package": "",
+  "python_package_slug": "{{ cookiecutter.python_package.split('==')|first }}",
+  "python_package_project_name": "{{ cookiecutter.python_package_slug|capitalize }}",
+  "project_slug": "test2learn{% if cookiecutter.python_package_slug -%}-{{ cookiecutter.python_package_slug|lower }}{%- endif %}.py"
+}
